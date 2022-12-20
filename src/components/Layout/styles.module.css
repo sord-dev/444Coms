@@ -1,0 +1,58 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+/* left side nav */
+
+.spacer {
+  width: 1px;
+  height: 35px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.navlinks {
+  font-family: "Poppins";
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navlinks a {
+  opacity: 0.7;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navlinks a:hover {
+  opacity: 1;
+}
+
+/* button group */
+
+.button_group {
+  display: flex;
+  gap: 10px;
+}
