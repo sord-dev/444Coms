@@ -3,15 +3,14 @@ import React from "react";
 import styles from "./styles.module.css";
 import { CTA } from "../CTA";
 
-export function Hero() {
+export function OfferSection() {
   return (
-    <div className={styles.hero}>
-      <div className={`${styles.hero_content} container`}>
-        <div>
-          <h1>Have your best call</h1>
-          <p>
-            Fast, reliable & simple conference calls from all around the world.
-          </p>
+    <div className={styles.offer_section}>
+      <div className={`${styles.offer_section_content} container`}>
+        <Image src={"/business.png"} width={530} height={370} />
+        <div className={styles.content}>
+          <h2>Perfect Solution for Small Businesses</h2>
+          <p>Pricing plans that fit like a glove.</p>
 
           <div className={styles.action_list}>
             <CTA
@@ -22,12 +21,11 @@ export function Hero() {
                 text: "Get a Demo",
                 style: "secondary",
                 size: "large",
+                color: "black",
               }}
             />
           </div>
         </div>
-
-        <Image src={"/hero-img.png"} width={620} height={620} />
       </div>
     </div>
   );
