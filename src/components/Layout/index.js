@@ -16,9 +16,11 @@ function Navbar() {
   return (
     <div className={`${styles.navbar_container} container`}>
       <div className={styles.navbar}>
-        <h2 className={styles.title}>
+       <Link href={'/'}>
+       <h2 className={styles.title}>
           <span className="green">444</span>Coms
         </h2>
+       </Link>
         <span className={styles.spacer}></span>
         <nav className={styles.navlinks}>
           <Link className={styles.link} href={"#"}>
